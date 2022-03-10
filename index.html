@@ -7,14 +7,14 @@ button:hover{font-size:20px;background:#000064;border:2px solid #fff;box-shadow:
 button:active{background:#ee596f;position:relative;color:#000;top:5px;box-shadow:none}
 </style>
 <meta charset="utf-8">
-<title>PS4MACEDO 9.00 SUPERLIGHT 6</title>
+<title>PS4MACEDO 9.00 SUPERLIGHT 7</title>
 <script> // carrega a cache
 window.applicationCache.ondownloading=function(){localStorage.isCached=!1},window.applicationCache.onprogress=function(e){document.getElementById("progress").innerHTML='Instalando Cache Offline: <font color="#ee596f">'+Math.round(e.loaded/e.total*100)+"%</font>"},window.applicationCache.oncached=function(){document.getElementById("progress").innerHTML='Cache <font color="#ee596f">instalada</font> com sucesso!!!',localStorage.isCached=!0,setTimeout(function(){document.getElementById("progress").innerHTML='Processo de download da cache para utilizar o <font color="#ee596f">host offline</font>.',document.getElementById("progress").innerHTML='Saia, <font color="#ee596f">desabilite a rede</font> e retorne ao navegador.', cache=true},2e3)}
 </script>
 <script>  // verifica se a cache foi carregada
 function Esconder(){
 if (localStorage.isCached){
-poc();
+setTimeout(poc(),150);
 }
 }
 </script>
@@ -52,15 +52,15 @@ chain.call(libKernelBase.add32(OFFSET_lk_pthread_create), pthread, 0x0, payload_
 }
 
 function jbdone() {
-goldhen21();
+hen();
 }
 
 function allset() {
 window.progress.innerHTML= LoadedMSG
 }
 
-function goldhen21(){
-progress.innerHTML="Carregando Goldhen v2.1.2... <font color=\"#ee596f\">Aguarde!</font>";
+function hen(){
+progress.innerHTML="Carregando Goldhen v2.2... <font color=\"#ee596f\">Aguarde!</font>";
 LoadedMSG="<font style='color:#ffffff; text-shadow: 5px 5px 5px #ff5757;'><b>B&nbsp;O&nbsp;A&nbsp;&nbsp;D&nbsp;I&nbsp;V&nbsp;E&nbsp;R&nbsp;S&nbsp;Ã&nbsp;O&nbsp;!&nbsp;!&nbsp;!</b></font>";
 PLfile = "hen.bin";
 setTimeout(loadBIN,1000);
@@ -70,7 +70,7 @@ setTimeout(loadBIN,1000);
 
 <body onload=Esconder()>
 <br><br><br><br><br>
-<h1><center><font style='color:#fff; font-size: 40px; font-weight: bold; margin: 0 0 0 0.0; text-shadow: 3px 2px #ff5757;'><i>PS4MACEDO Fw 9.00 COM GOLDHEN V2.1.2</i></font></center></h1>
+<h1><center><font style='color:#fff; font-size: 40px; font-weight: bold; margin: 0 0 0 0.0; text-shadow: 3px 2px #ff5757;'><i>PS4MACEDO Fw 9.00 COM GOLDHEN V2.2</i></font></center></h1>
 <br><br><br><br>
 <hr width="65%" size="1" color="#ff5757">
 <div id=progress style=font-size:31px;text-align:center;color:#fff>Preparando o desbloqueio. Por favor, <font color="#ee596f">AGUARDE!!!</font></div>
