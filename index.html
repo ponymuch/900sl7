@@ -9,7 +9,7 @@ button:active{background:#ee596f;position:relative;color:#000;top:5px;box-shadow
 <meta charset="utf-8">
 <title>PS4MACEDO 9.00 SUPERLIGHT 7</title>
 <script> // carrega a cache
-window.applicationCache.ondownloading=function(){localStorage.isCached=!1},window.applicationCache.onprogress=function(e){document.getElementById("progress").innerHTML='Instalando Cache Offline: <font color="#ee596f">'+Math.round(e.loaded/e.total*100)+"%</font>"},window.applicationCache.oncached=function(){document.getElementById("progress").innerHTML='Cache <font color="#ee596f">instalada</font> com sucesso!!!',localStorage.isCached=!0,setTimeout(function(){document.getElementById("progress").innerHTML='Processo de download da cache para utilizar o <font color="#ee596f">host offline</font>.',document.getElementById("progress").innerHTML='Saia, <font color="#ee596f">desabilite a rede</font> e retorne ao navegador.', cache=true},2e3)}
+window.applicationCache.ondownloading=function(){localStorage.isCached=!1},window.applicationCache.onprogress=function(e){document.getElementById("progress").innerHTML='Installing Cache Offline: <font color="#ee596f">'+Math.round(e.loaded/e.total*100)+"%</font>"},window.applicationCache.oncached=function(){document.getElementById("progress").innerHTML='Cache <font color="#ee596f">installed</font> successfully!!!',localStorage.isCached=!0,setTimeout(function(){document.getElementById("progress").innerHTML='Cache download process to use the <font color="#ee596f">host offline</font>.',document.getElementById("progress").innerHTML='Exit, <font color="#ee596f"disable the network</font>and return to the browser.', cache=true},2e3)}
 </script>
 <script>  // verifica se a cache foi carregada
 function Esconder(){
@@ -60,7 +60,7 @@ window.progress.innerHTML= LoadedMSG
 }
 
 function hen(){
-progress.innerHTML="Carregando Goldhen v2.2... <font color=\"#ee596f\">Aguarde!</font>";
+progress.innerHTML="Loading Goldhen v2.2... <font color=\"#ee596f\">Hold!</font>";
 LoadedMSG="<font style='color:#ffffff; text-shadow: 5px 5px 5px #ff5757;'><b>B&nbsp;O&nbsp;A&nbsp;&nbsp;D&nbsp;I&nbsp;V&nbsp;E&nbsp;R&nbsp;S&nbsp;Ã&nbsp;O&nbsp;!&nbsp;!&nbsp;!</b></font>";
 PLfile = "hen.bin";
 setTimeout(loadBIN,1000);
@@ -73,12 +73,12 @@ setTimeout(loadBIN,1000);
 <h1><center><font style='color:#fff; font-size: 40px; font-weight: bold; margin: 0 0 0 0.0; text-shadow: 3px 2px #ff5757;'><i>PS4MACEDO Fw 9.00 COM GOLDHEN V2.2</i></font></center></h1>
 <br><br><br><br>
 <hr width="65%" size="1" color="#ff5757">
-<div id=progress style=font-size:31px;text-align:center;color:#fff>Preparando o desbloqueio. Por favor, <font color="#ee596f">AGUARDE!!!</font></div>
+<div id=progress style=font-size:31px;text-align:center;color:#fff>Preparing to unlock. Please <font color="#ee596f">HOLD!!!</font></div>
 <hr width="65%" size="1" color="#ff5757">
 <br><br><br><br><br><br><br><br><br>
-<font style='color:#fff; font-size:19px;'>Este host funciona em off-line</font>
+<font style='color:#fff; font-size:19px;'>This host works in offline</font>
 <div style='text-align:left;position:fixed;left:10px;bottom:10px;width:100%;font-size:22px;color:#fff'>
-Agradecimento Especial: <font color=#6089f6>TheFloW-SpecterDev-ChendoChap-Znullptr-Sleirsgoevy-SiSTRo-e todos que contribuíram com a cena.</font>
+Special thanks: <font color=#6089f6>TheFloW-SpecterDev-ChendoChap-Znullptr-Sleirsgoevy-SiSTRo-e everyone who contributed to the scene.</font>
 </div>
 <script> // int64
 function int64(low, hi) {
@@ -954,7 +954,7 @@ chain.fcall(window.syscalls[6], kqueues[i]);
 chain.run();
 
 //Trigger OOB
-alert("\n\nQuase pronto!!! Agora siga os passos abaixo para concluir o desbloqueio:\n\n1. Insira o USB com o arquivo exfathax_pico.img (pOOBs4). \n2. Após \"3s\" da notificação \"...USB é incompatível\", clique em OK.");
+alert("\n\nAlmost ready!!! Now follow the steps below to complete the unlock:\n\n1. Insert the USB with the file exfathax_pico.img (pOOBs4). \n2. After \"3s\" of the notification \"...USB is incompatible\",click OK.");
 //Trigger corrupt knote
 {
 for (var i = 1; i < NUM_KQUEUES; i += 2) {
@@ -983,12 +983,12 @@ chain.fcall(window.syscalls[203], patch_buffer, 0x4000);
 chain.fcall(patch_buffer, p.read8(KERNEL_BASE_PTR));
 chain.fcall(window.syscalls[73], patch_buffer, 0x4000);
 chain.run();
-alert("\n\n\nNa tentativa de evitar erros, remova o USB agora e clique em OK.");
+alert("\n\n\nIn an attempt to avoid errors, remove the USB now and click OK.");
 setTimeout(jbdone, 1000);
 }
 else
 {
-alert("O desbloqueio FALHOU!!! Feche o navegador e\nrefaça \"TODO PROCESSO\", inclusive excluindo cookies e dados de sites.\n\nObservações:\nSó conecte o USB quando for solicitado.\nVerifeque se USB ficou bem conectado, permanecendo a falha,\npode ser que o USB esteja corrompido, reescreva a imagem.");
+alert("Unlocking FAILED!!! Close the browser and\nredo \"WHOLE PROCESS\", including deleting cookies and website data.\n\nComments:\nOnly connect the USB when prompted.\nCheck that the USB is properly connected, remaining the fault,\nmaybe the USB is corrupted, rewrite the image.");
 p.write8(0, 0);
 }
 }
