@@ -1,2 +1,3 @@
 # 900sl7
-Todo: Tranlating
+En ver
+
