@@ -1,2 +1,2 @@
 # 900sl7
-Tode: Tranlating
+Todo: Tranlating
